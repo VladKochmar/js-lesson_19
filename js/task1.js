@@ -12,7 +12,7 @@ class ProductCard {
    render(containerSelector) {
       const cardContainer = document.createElement('div')
       cardContainer.className = 'product'
-      cardContainer.onclick = this.selectProduct.bind(cardContainer)
+      cardContainer.onclick = this.selectProduct
 
       const label = document.createElement('label')
       label.innerText = this.label
